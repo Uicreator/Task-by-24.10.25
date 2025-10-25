@@ -1,0 +1,25 @@
+**Task 2**
+
+
+#✅ Task-2: Write a program to send a simple email to given receipent. Subject - Test Mail, Body: Test Mail using Python
+
+
+
+
+import smtplib
+
+sender = "bheemrajusai2@gmail.com"
+password = "pdpy kwfu tvhr jzxd"
+receiver = "bheemrajusai2@gmail.com"
+try:
+
+
+
+   server = smtplib.SMTP('smtp.gmail.com', 587)
+   server.starttls()
+   server.login(sender, password)
+   server.sendmail(sender, receiver, "subject: test mail\n\nTest mail")
+   server.quit()
+   print("email sent!")
+except  Exception as e:
+   print(f"error: {e}")
