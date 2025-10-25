@@ -1,0 +1,12 @@
+***TASK 04****
+
+✅ Task-3: Write a program to convert a dictionary into JSON object and viceversa.
+
+
+import json
+
+person_dict = {'name':'sai','class':'four' }
+person_json = json.dumps(person_dict)
+print('json:',person_json)
+person_dict_again = json.loads(person_json)
+print("dictionary:",person_dict_again)
