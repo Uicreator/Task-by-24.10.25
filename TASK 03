@@ -1,0 +1,16 @@
+***TASK 03***
+
+✅ Task-4: Write a program to open "cmd" and close it autmatically after 1 minute. 
+SQL TASKS:
+
+
+
+import subprocess
+import time
+import os
+import signal
+process = subprocess.Popen("cmd", creationflags=subprocess.CREATE_NEW_CONSOLE)
+print("CMD opened...")
+time.sleep(1)
+os.kill(process.pid, signal.SIGTERM)
+print("CMD closed after 1 minute.")
