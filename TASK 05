@@ -1,0 +1,21 @@
+****TASK 06****
+
+
+✅ Task-2: Learn "Create" command and try to create a simple table of your choice
+
+
+create table students(
+    id int,
+    name varchar(50),
+    loction varchar(100)
+    );
+    
+    show tables;
+    
+    insert into students (id,name,loction) 
+   values (3613612 , 'bheemaraju sai','etikoppaka');
+   
+   
+   select * from students;
+
+
